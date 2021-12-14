@@ -1,0 +1,26 @@
+html {
+    font-family: 'Bakbak One', cursive;
+    
+}
+
+body {
+    margin: 0px; 
+    padding: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+    padding: 0 50px 0 50px;
+    color: white;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style-type:none;
+}
