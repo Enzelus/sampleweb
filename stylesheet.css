@@ -94,8 +94,9 @@ body {
 
 .profile {
     display: table;
-    background: url(./imagefolder/pexels-tuấn-kiệt-jr-1382731.jpeg);
+    background: url(./imagefolder/IMG_20220218_233312.jpeg);
     background-size: cover;
+    background-position: center;
     width: 200px;
     height: 200px;
     background-color: rgba(196, 196, 196, 1);
@@ -105,7 +106,7 @@ body {
 
 .profile::after {
     content: 'Michael Dayo';
-    font-size: 50px;
+    font-size: 30px;
     white-space: nowrap;
     margin-left:-150px ; /* look at profile-container,break it up into four sections and see that center is 150px */
     color: white;
@@ -145,16 +146,26 @@ body {
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 300px;
     height: 50px;
-    align-self: flex-end;
     background-color:rgba(196, 196, 196, 1) ;
     border-radius: 30px;
 }
 
 .twitter, .github , .discord {
-    width: 500px;
-    height: 50px;
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    padding: 10px;
+    width:400px;
+    height: 30px;
     background-color:rgba(196, 196, 196, 1) ;
     border-radius: 30px;
+}   
+
+.twitter h3, .github h3, .discord h3 {
+    margin: auto;
 }
