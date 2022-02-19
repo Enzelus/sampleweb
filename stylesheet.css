@@ -45,6 +45,44 @@ body {
     width: 10vw;
 }
 
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(24, 24, 24);
+    z-index: 100;
+    transition: opacity  1s, visibility 1s;
+}
+
+.loading::after {
+    content: '';
+    width: 75px;
+    height: 75px;
+    border: 15px solid white;
+    border-radius: 50%;
+    border-top-color:red ;
+    z-index: 101;
+    animation: loading 0.75s ease infinite;
+}
+
+
+
+@keyframes loading {
+    from{transform: rotate(0turn);}
+    to{transform: rotate(1turn);}
+}
+
+.loading-hide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
 
 
 .main-content {
@@ -69,7 +107,8 @@ body {
 
 .temp {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     height:fit-content;
     background-color: rgba(196, 196, 196, 1);
@@ -94,7 +133,7 @@ body {
 
 .profile {
     display: table;
-    background: url(./imagefolder/IMG_20220218_233312.jpeg);
+    background: url(./imagefolder/pexels-tuấn-kiệt-jr-1382731.jpeg);
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -121,7 +160,8 @@ body {
 
 .contacts-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
     padding: 10rem;
     background-color: rgb(48, 48, 48, 1);
 }
@@ -155,17 +195,38 @@ body {
     border-radius: 30px;
 }
 
-.twitter, .github , .discord {
+    .input {
     display: flex;
     align-items:center;
     justify-content: flex-end;
     padding: 10px;
-    width:400px;
+    width:150px;
     height: 30px;
     background-color:rgba(196, 196, 196, 1) ;
     border-radius: 30px;
 }   
 
-.twitter h3, .github h3, .discord h3 {
-    margin: auto;
+
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+#message {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:'Bakbak One', cursive ;
+}
+
+
+
+.social-align {
+    display: flex;
 }
