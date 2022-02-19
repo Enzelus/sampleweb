@@ -134,7 +134,7 @@ body {
 
 .profile {
     display: table;
-    background: url(./imagefolder/pexels-tuấn-kiệt-jr-1382731.jpeg);
+    background: url(./imagefolder/womantemp.jpeg);
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -224,6 +224,15 @@ body {
     padding: 10px;
     box-sizing: border-box;
     font-family:'Bakbak One', cursive ;
+}
+
+input[type=submit] {
+    font-family: 'Bakbak One', cursive;
+}
+
+#message-submit {
+    border: 2px solid grey;
+    border-radius: 10%;
 }
 
 
