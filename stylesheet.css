@@ -134,7 +134,11 @@ body {
 
 .profile {
     display: table;
+<<<<<<< HEAD
     background: url(./imagefolder/womantemp.jpeg);
+=======
+    background: url(./imagefolder/pexels-tuấn-kiệt-jr-1382731.jpeg);
+>>>>>>> dac7207c1562b150f159a1e6ba8591355451f27a
     background-size: cover;
     background-position: center;
     width: 200px;
@@ -238,6 +242,7 @@ input[type=submit] {
 .social-align {
     display: flex;
 }
+<<<<<<< HEAD
 
 #footer {
     width: 100vw;
@@ -272,3 +277,5 @@ input[type=submit] {
     background: rgb(0, 0, 0);
     color: white;
 }
+=======
+>>>>>>> dac7207c1562b150f159a1e6ba8591355451f27a
