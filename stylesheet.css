@@ -141,11 +141,19 @@ body {
     height: 200px;
     background-color: rgba(196, 196, 196, 1);
     border-radius: 50%;
+    border: black solid 10px;
     position: relative;
+    transition: transform 0.5s ease-in;
+}
+
+.profile:hover {
+    transform: scale(1.3);
 }
 
 .profile::after {
     content: 'Michael Dayo';
+    background:black;
+    border-radius: 10px;
     font-size: 30px;
     white-space: nowrap;
     margin-left:-150px ; /* look at profile-container,break it up into four sections and see that center is 150px */
@@ -158,6 +166,7 @@ body {
     right: 0;
     z-index: 2;
 }
+
 
 .contacts-container {
     display: flex;
@@ -226,7 +235,7 @@ body {
     font-family:'Bakbak One', cursive ;
 }
 
-input[type=submit] {
+input {
     font-family: 'Bakbak One', cursive;
 }
 
@@ -237,6 +246,28 @@ input[type=submit] {
 
 .social-align {
     display: flex;
+}
+
+.back-up {
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: rgb(185, 0, 0);
+}
+
+.back-up-hidden {
+    display: none;
+}
+
+.back-up a {
+    color: white;
+    text-decoration: none;
 }
 
 #footer {

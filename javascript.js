@@ -45,3 +45,20 @@ window.addEventListener('load', () => {
     document.querySelector(".loading").classList.add("loading-hide")
 })
 
+const footer = document.getElementById("footer");
+const backUp = document.querySelector(".back-up");
+const options = {};
+const observer = new IntersectionObserver((entries,observer) => {
+    entries.forEach(entry => {
+        // console.log(entry)
+        if (!entry.isIntersecting) {
+            backUp.style.right = '-200px'
+        }
+
+        else {
+            backUp.style.right ='0'
+        }
+    });
+}, options);
+
+observer.observe(footer);
