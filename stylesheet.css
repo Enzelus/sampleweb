@@ -61,13 +61,13 @@ body {
 
 .loading::after {
     content: '';
-    width: 75px;
-    height: 75px;
-    border: 15px solid white;
+    width: 100px;
+    height: 100px;
+    border: 30px solid white;
     border-radius: 50%;
     border-top-color:red ;
     z-index: 101;
-    animation: loading 0.75s ease infinite;
+    animation: loading 0.75s ease-in-out infinite;
 }
 
 
