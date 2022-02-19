@@ -249,6 +249,7 @@ input {
 }
 
 .back-up {
+    transition: right 0.5s ease;
     width: fit-content;
     height: fit-content;
     box-sizing: border-box;
