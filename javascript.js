@@ -27,7 +27,7 @@ addEventListener('scroll', () => {
     
 
     if (window.scrollY > prevScrolled) {
-        navbar.style.top = '-100px'
+        navbar.style.top = '-100vh'
         // console.log("We're Going Down!")
     }
 
@@ -62,3 +62,13 @@ const observer = new IntersectionObserver((entries,observer) => {
 }, options);
 
 observer.observe(footer);
+
+const burger = document.querySelector('.burger');
+const navlinks = document.querySelector('.navlinks');
+
+burger.addEventListener('click', () => {
+
+        navlinks.classList.toggle('navlinks-active')
+        burger.classList.toggle('open')
+
+})
