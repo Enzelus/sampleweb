@@ -109,7 +109,7 @@ body {
 }
 
 .main-image {
-    max-height:600px;
+    max-width: 300px;
 }
 
 .Info {
@@ -139,7 +139,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 450px;
+    min-width: 250px;
     height: 300px;
     background-color: rgba(48, 48, 48, 1);
     border-radius: 50px;
@@ -408,20 +408,22 @@ ul {
 
     .main-content {
         flex-direction: column;
+        padding: 5rem 0 5rem 0;
     }
 
     .Info {
         text-align: center;
-        width: 500px;
+        width:fit-content;
     }
 
     .temp {
         flex-direction: column-reverse;
+        padding: 5rem 0 5rem 0;
     }
 
     .introduction {
         text-align: center;
-        width: 500px;
+        width: fit-content;
     }
 
     .contacts-container {
@@ -433,6 +435,18 @@ ul {
     }
     .social-container {
         margin: 2rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-content :nth-child(1) {
+        text-align: center;
+    }
+
+    .footer-content :nth-child(1) img {
+        width: 100px;
     }
 
   }
