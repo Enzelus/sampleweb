@@ -104,7 +104,6 @@ body {
     background-color: rgba(48, 48, 48, 1);
     align-items: center;
     justify-content: center;
-    gap: 50px;
     padding:10rem;
 }
 
@@ -334,17 +333,30 @@ ul {
     margin: 0;
 }
 
+.header h2 {
+    color:black;
+}
+
 @media only screen and (max-width: 1200px) {
 
     #navbar {
         flex-direction: column;
+        background: none;
+        padding: 0;
     }
+
 
     .logo {
         display: flex;
         align-items: center;
         justify-content: space-between;
         height: fit-content;
+        background: black;
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 100px;
     }
 
     .navlinks {
@@ -353,6 +365,7 @@ ul {
         position: relative;
         right: -100vw;
         transition: right 1s ease;
+        background: rgb(31, 31, 31);
     }
 
     .navlinks-active {
@@ -424,6 +437,7 @@ ul {
     .introduction {
         text-align: center;
         width: fit-content;
+        color: black;
     }
 
     .contacts-container {
